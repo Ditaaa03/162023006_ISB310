@@ -1,0 +1,120 @@
+/* saya mengerjakan tugas ini sendiri tanpa melakukan kecurangan seperti menggunakan, 
+ mendupliaksi kode perogram kode program yang ada. jiKa saya melakukan kecurangan dalam 
+ perngerjaan tugas ini maka saya siap menerima sanksi atau hukuman dari dari dosen mata kuliah 
+ dan tuhan / allah  swt */
+ 
+body {
+    margin: 0;
+    background-color: #5F8FAA;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 800px;
+    min-height: 500px;
+    margin: 20px auto; 
+    background-color: #eeeeee; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.header-wrapper::before {
+    content: "";
+    display: block;
+    height: 12px;
+    background: radial-gradient(circle at 12px -2px, #5f88a7 12px, transparent 13px) repeat-x;
+    background-size: 24px 12px;
+}
+
+.header {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #E2D800;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #032152;
+    padding: 20px 0; 
+}
+
+.content {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.content h2 {
+    color: #21678A;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.form-box {
+    width: 500px; 
+    margin: 0 auto 40px auto;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 15px; 
+}
+
+.label-box,
+.input-box {
+    width: 50%;              
+    background-color: #C0E8FB;
+    padding: 12px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+}
+
+.label-box {
+    font-weight: bold;
+    color: #21678A;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 2px dashed #21678A;
+    box-sizing: border-box;
+}
+
+.remember-box {
+    background-color: #C0E8FB;
+    padding: 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.submit-box {
+    background-color: #C0E8FB;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: right;
+}
+
+button {
+    background-color: #21678A;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a5872;
+}

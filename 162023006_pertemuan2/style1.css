@@ -1,0 +1,114 @@
+/* saya mengerjakan tugas ini sendiri tanpa melakukan kecurangan seperti menggunakan, 
+ mendupliaksi kode perogram kode program yang ada. jiKa saya melakukan kecurangan dalam 
+ perngerjaan tugas ini maka saya siap menerima sanksi atau hukuman dari dari dosen mata kuliah 
+ dan tuhan / allah  swt */
+
+body {
+    background-color: #5f88a7;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #E2D800;
+    background-image: radial-gradient(circle, #5f88a7 6px, transparent 7px);
+    background-size: 20px 12px;
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+.header-wrapper {
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.header-wrapper::before {
+    content: "";
+    display: block;
+    height: 12px;
+    background: radial-gradient(circle at 12px -2px, #5f88a7 12px, transparent 13px) repeat-x;
+    background-size: 24px 12px;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #032152;
+    padding: 15px;
+}
+
+.card {
+    width: 800px;
+    margin: auto;
+    background-color: #eeeeee;
+    border-collapse: collapse;
+}
+
+.cardkiri {
+    width: 300px;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.cardkanan {
+    width: 500px;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.divider {
+    width: 2px;
+    border-left: 2px dotted #999;
+}
+
+.dotted {
+    border: 0;
+    border-top: 2px dotted #999;
+}
+
+.judultabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c5391;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #9CBCD0;
+    border-top: 4px solid #032152;  
+}
+
+.table-header th {
+    background-color: #9CBCD0;
+    color: #032152;   
+    font-weight: bold;
+}
+
+.data-table td {
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    color: #ffffff;        
+    font-weight: normal;  
+}
+
+.note-table {
+    width: 100%;
+    border-collapse: collapse;
+} 
+
+.table-note td {
+    background-color: #dbe6ec;
+    color: #032152;        
+    font-style: normal;    
+    font-weight: normal;   
+    text-align: center;
+    border-bottom: 4px solid #032152;
+    padding: 8px;
+}
