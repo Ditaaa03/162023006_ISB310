@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferensi Warna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Pengaturan Warna Tampilan</h1>
+
+    <div class="main-container">
+        <fieldset>
+            <legend>Warna</legend>
+
+            <div class="row">
+                <span>1. Warna Latar Belakang</span>
+                <div id="bgPreview" class="preview-box" onclick="openModal('bg')"></div>
+            </div>
+
+            <div class="row">
+                <span>2. Warna Teks</span>
+                <div id="textPreview" class="preview-box" onclick="openModal('text')"></div>
+            </div>
+        </fieldset>
+
+        <button class="btn-action" onclick="terapkanWarna()">Simpan</button>
+    </div>
+
+    <div id="colorModal" class="modal">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+                <strong>Pilih Warna</strong>
+                <button class="btn-select" onclick="pilihWarna()">Select</button>
+            </div>
+
+            <div class="color-grid" id="colorGrid"></div>
+
+            <div class="custom-section">
+                <span>Custom</span>
+                <div class="custom-controls">
+                    <label for="nativePicker" class="btn-plus">+</label>
+                    <input type="color" id="nativePicker" onchange="updateFromNative(this.value)">
+                    <div id="customPreview" class="tile"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

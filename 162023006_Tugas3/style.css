@@ -1,0 +1,145 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI';
+    padding: 26px;
+    margin: 0;
+}
+
+h1 { 
+    color: #ff0000; 
+    font-family: "Times New Roman", serif; 
+    font-size: 47px; 
+    margin-top: 4px;
+    margin-bottom: 21px;
+}
+
+fieldset { 
+    border: 1px solid #d1d1d1; 
+    padding: 23px 19px 28px 21px; 
+    width: 440px; 
+    border-radius: 2px;
+}
+
+legend { 
+    color: #ff0000; 
+    padding: 0 7px; 
+    font-weight: 500;
+}
+
+.row { 
+    display: flex; 
+    align-items: center; 
+    margin-top: 13px;
+    margin-bottom: 16px; 
+    color: #ff0000; 
+}
+
+.preview-box {
+    width: 63px; 
+    height: 29px; 
+    border: 3px solid #f9f9f9;
+    margin-left: 12px; 
+    cursor: pointer; 
+    background: #fff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.btn-action { 
+    margin-top: 14px; 
+    padding: 6px 17px; 
+    cursor: pointer; 
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.modal-content {
+    background: #313131; 
+    color: #ececec; 
+    padding: 14px 16px;
+    border-radius: 7px; 
+    width: 338px; 
+    box-shadow: 0 4px 18px rgba(0,0,0,0.45);
+}
+
+.modal-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 18px; 
+}
+
+.btn-select { 
+    background: #218838; 
+    color: #fff; 
+    border: none; 
+    padding: 5px 14px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bold;
+}
+
+.btn-cancel { 
+    background: #3e3e3e; 
+    color: #dcdcdc; 
+    border: 1px solid #4a4a4a; 
+    padding: 4px 11px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+.color-grid { 
+    display: grid; 
+    grid-template-columns: repeat(8, 1fr); 
+    gap: 5px; 
+}
+
+.tile { 
+    width: 36px; 
+    height: 31px; 
+    cursor: pointer; 
+    border: 1px solid #1a1a1a; 
+}
+
+.tile:hover, .tile.active { 
+    border: 2px solid #ffffff; 
+    outline: 1px solid #000;
+}
+
+.custom-section { 
+    margin-top: 17px; 
+    border-top: 1px solid #484848; 
+    padding-top: 12px; 
+}
+
+.custom-controls { 
+    display: flex; 
+    align-items: center; 
+    gap: 9px; 
+    margin-top: 6px; 
+}
+
+.btn-plus {
+    width: 34px; 
+    height: 28px; 
+    background: #3a3a3a; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer; 
+    border: 1px solid #505050;
+    font-size: 18px;
+}
+
+#nativePicker { display: none; }
