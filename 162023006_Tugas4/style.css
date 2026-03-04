@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-image: url("assets/logo_itenas.jpeg");
+    background-repeat: repeat;   
+    background-size: 200px;      
+}
+
+.wrapper {
+    width: 1000px;
+    margin: auto;
+    background: #d79a3b;
+    border: 8px solid #7a3d3d;
+}
+
+.header img {
+    width: 33.33%;
+    height: 150px;
+    float: left;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px;
+}
+
+.menu {
+    cursor: pointer;
+    color: blue;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+table {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    background: orange;
+    padding: 10px;
+}
