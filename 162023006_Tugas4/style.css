@@ -3,7 +3,7 @@ body {
     font-family: Arial;
     background-image: url("assets/logo_itenas.jpeg");
     background-repeat: repeat;   
-    background-size: 200px;      
+    background-size: 100px;      
 }
 
 .wrapper {
@@ -42,14 +42,29 @@ body {
 .main {
     flex: 1;
     padding: 20px;
+    text-align: justify;
 }
 
-hr {
-    border: 1px solid black;
+form {
+    text-align: center;
+    margin-top: 30px;
 }
 
 table {
     margin-top: 10px;
+}
+
+#output {
+    width: 500px;
+    margin: 10px auto;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#output table td:last-child {
+    background-color: white;
+    padding: 5px 90px;
 }
 
 .hidden {
@@ -60,4 +75,8 @@ table {
     text-align: center;
     background: orange;
     padding: 10px;
+}
+
+#tanggal, #bulan, #tahun {
+    font-weight: bold;
 }

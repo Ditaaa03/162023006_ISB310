@@ -7,8 +7,6 @@
 <body>
 
 <div class="wrapper">
-
-    <!-- BAGIAN GAMBAR ATAS -->
     <div class="header">
         <div class="gambar">
             <img src="assets/gambar_itenas.jpg">
@@ -21,8 +19,6 @@
     </div>
 
     <div class="content">
-
-        <!-- SIDEBAR -->
         <div class="sidebar">
             <p class="menu" onclick="showHome()">Home</p>
             <hr>
@@ -33,69 +29,76 @@
             <p class="menu" onclick="showGaris()">Garis Hidup</p>
         </div>
 
-        <!-- ISI -->
         <div class="main" id="home">
 
             <h2>Program Garis Hidup Tanggal Lahir</h2>
 
             <p>
-                Program ini merupakan program untuk mendeskripsikan karakter anda berdasarkan
-                tanggal lahir yang kemudian hasilnya akan dikategorikan sebagai Garis Lahir 1 sampai 9.
+                Program untuk mengetahui "garis hidup" berdasarkan tanggal lahir umumnya merujuk pada Numerologi Life Path Number 
+                (Angka Jalan Kehidupan). Ini adalah metode untuk menghitung potensi, kepribadian, tantangan, dan tujuan hidup seseorang 
+                berdasarkan tanggal, bulan, dan tahun kelahiran. 
             </p>
 
             <p>
-                Angka-angka dalam tanggal lahir Anda menyimpan banyak makna.
-                Jumlahkan sampai menjadi satu angka.
+                Setiap bagian dari tanggal lahir (tanggal, bulan, tahun) direduksi menjadi satu digit, lalu dijumlahkan kembali hingga mendapatkan 
+                satu angka akhir (1-9), atau angka master (11, 22, 33). 
+                Contoh: 15 Agustus 1993 (15/08/1993)
+                <ol>
+                    <li>Reduksi Tanggal Lahir (Day): 1 + 5 = 6</li>
+                    <li>Reduksi Bulan Lahir (Month): Agustus = 8 = </li>
+                    <li>Reduksi Tahun Lahir (Year): 1 + 9 + 9 + 3 = 22 = 2 + 2 = 4</li>
+                    <li>Jumlahkan Semua Hasil: 6 (tgl) + 8 (bln) + 4 (thn) = 18</li>
+                    <li>Reduksi Menjadi Satu Digit: 1 + 8 = 9</li>
+                </ol> 
+                Jadi, Life Path Number untuk tanggal lahir 15 Agustus 1993 adalah 9. 
             </p>
 
-            <h3>Ayo Cari Tahu Kepribadian Kamu !</h3>
+            <h2>Ayo Cari Tahu Kepribadian Kamu !</h2>
             <hr>
-
             <form>
                 Masukkan Tanggal Lahir Anda :
                 <select id="tanggal"></select>
+                <br><br>
                 <br><br>
 
                 Masukkan Bulan Lahir Anda :
                 <select id="bulan"></select>
                 <br><br>
+                <br><br>
 
                 Masukkan Tahun Lahir Anda :
                 <select id="tahun"></select>
                 <br><br>
-
-                <button type="button" onclick="hitung()">kirim</button>
-                <button type="reset" onclick="resetData()">reset</button>
+                <br><br>
             </form>
-
+            
+            <button type="button" onclick="hitung()">kirim</button>
+            <button type="reset" onclick="resetData()">reset</button>
             <hr>
 
+            <h2>Output</h2>
             <div id="output" class="hidden">
-                <h3>Output</h3>
-
                 <table>
-                    <tr><td>Tanggal</td><td>:</td><td id="o1"></td></tr>
-                    <tr><td>Bulan</td><td>:</td><td id="o2"></td></tr>
-                    <tr><td>Tahun</td><td>:</td><td id="o3"></td></tr>
-                    <tr><td>Hasil 1</td><td>:</td><td id="o4"></td></tr>
-                    <tr><td>Hasil 2</td><td>:</td><td id="o5"></td></tr>
-                    <tr><td>Hasil Akhir</td><td>:</td><td id="o6"></td></tr>
+                    <tr><td>Tanggal</td><td>:</td><td id="1"></td></tr>
+                    <tr><td>Bulan</td><td>:</td><td id="2"></td></tr>
+                    <tr><td>Tahun</td><td>:</td><td id="3"></td></tr>
+                    <tr><td>Hasil 1</td><td>:</td><td id="4"></td></tr>
+                    <tr><td>Hasil 2</td><td>:</td><td id="5"></td></tr>
+                    <tr><td>Hasil Akhir</td><td>:</td><td id="6"></td></tr>
                 </table>
-
-                <h2 id="judul"></h2>
-                <p id="arti"></p>
             </div>
+            
+            <h2 id="judul"></h2>
+            <p id="arti"></p>
 
         </div>
 
         <div class="main hidden" id="menu">
             <h2>Menu</h2>
-            <p>Silahkan kembali ke Home untuk menghitung.</p>
         </div>
 
         <div class="main hidden" id="garis">
             <h2>Penjelasan Garis Hidup</h2>
-            <p>Jumlahkan semua angka tanggal lahir sampai menjadi 1 digit.</p>
         </div>
 
     </div>
